@@ -61,9 +61,9 @@
     display: flex;
     margin: 32px auto;
     padding: 0 16px;
-    max-width: 960px;
+    max-width: 80%;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
   }
 
   svg.material-icons {
@@ -91,7 +91,7 @@
     border: 1px solid #eee;
     background-color: #fafafa;
     height: 40px;
-    width: 200px;
+    width: 500px;
     margin: 0 8px 16px;
     padding: 16px;
     display: flex;
@@ -125,7 +125,8 @@
   }
 
   .card.highlight-card {
-    background-color: #1976d2;
+    /**background-color: #1976d2;*/
+    background-color: grey;
     color: white;
     font-weight: 600;
     border: none;
@@ -336,11 +337,10 @@
 
   <!-- Highlight Card -->
   <div class="card highlight-card">
-
-    <router-outlet></router-outlet>
-
+      <h1>Test App</h1>
   </div>
-
+  <router-outlet></router-outlet>
+<div class="clear"></div>
   <!-- Footer -->
   <footer>
       Love Angular?&nbsp;

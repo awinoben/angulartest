@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PatientListComponent } from './patient-list/patient-list.component';
 import { PatientCreateComponent } from './patient-create/patient-create.component';
 import { HttpClientModule } from  '@angular/common/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from  '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
